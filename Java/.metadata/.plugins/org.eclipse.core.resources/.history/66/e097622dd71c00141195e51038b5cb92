@@ -1,0 +1,92 @@
+import java.awt.BorderLayout;
+import java.awt.Container;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+
+public class FinalProject implements ActionListener {
+
+	JButton Button1;
+
+	JButton Button2;
+
+	JButton Button3;
+
+	JButton Button4;
+
+	JButton Button5;
+
+	JButton Button6;
+
+	JButton Button7;
+
+	JButton Button8;
+
+	JButton Button9;
+
+	JButton Button0;
+
+	JButton ButtonAdd;
+
+	JButton ButtonSubtract;
+
+	JButton ButtonMultiplayer;
+
+	JButton ButtonDivide;
+	
+	int
+	FirstNumber,
+	SecondNumber;
+	
+	String 
+	Operation;
+	
+	public static void main(String[] args) {
+		
+		JFrame window = new JFrame ();
+		
+		window.setVisible(true);
+		window.setSize(500, 600);
+		window.setTitle("Eric's Calculator");
+		
+
+		
+		Container arrangement = window.getContentPane();
+		arrangement.setLayout(new GridLayout(3,3));
+		
+		JPanel buttonsPanel = new JPanel();
+		buttonsPanel.setLayout(new GridLayout(2,3));
+		
+		Button1 = new JButton("Button1");
+		Button1.addActionListener(this);
+		buttonsPanel.add(Button1);
+		
+		Button2 = new JButton("Button2");
+		Button2.addActionListener(this);
+		buttonsPanel.add(Button2);
+		
+		Button3 = new JButton("Button3");
+		Button3.addActionListener(this);
+		buttonsPanel.add(Button3);
+		
+		Button4 = new JButton("Button4");
+		Button4.addActionListener(this);
+		ButtonsPanel.add(Button4);
+		
+		arrangement.add(buttonsPanel, BorderLayout.NORTH);
+		
+		
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

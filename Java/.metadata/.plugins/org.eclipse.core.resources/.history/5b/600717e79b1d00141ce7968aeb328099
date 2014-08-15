@@ -1,0 +1,186 @@
+import java.awt.BorderLayout;
+import java.awt.Container;
+import java.awt.Font;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+
+public class FinalProject implements ActionListener {
+
+	JButton Button1;
+
+	JButton Button2;
+	
+	JButton Button3;
+
+	JButton Button4;
+
+	JButton Button5;
+	
+	JButton Button6;
+
+	JButton Button7;
+
+	JButton Button8;
+
+	JButton Button9;
+
+	JButton Button0;
+	
+	JButton InvisButton;
+
+	JButton ButtonAdd;
+
+	JButton ButtonSubtract;
+
+	JButton ButtonMultiplayer;
+
+	JButton ButtonDivide;
+	
+	int
+	FirstNumber,
+	SecondNumber;
+	
+	String 
+	Operation;
+	
+	public static void main(String[] args) {
+		
+		new FinalProject();
+		
+		
+		
+		
+	}
+	
+	public FinalProject(){
+		
+		JFrame window = new JFrame();
+		window.setSize(600,400);
+		window.setVisible(true);
+		window.setTitle("Button Game 1.10");
+		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		Container arrangement = window.getContentPane();
+		arrangement.setLayout(new GridLayout(20,20));
+		
+		JPanel buttonsPanel = new JPanel();
+		buttonsPanel.setLayout(new GridLayout(1,20));
+		
+		Button1 = new JButton("Button1");
+		Button1.addActionListener(this);
+		Button1.setText("1");
+		Button1.setFont(new Font("Serif", Font.PLAIN, 40));
+		buttonsPanel.add(Button1);
+		
+		InvisButton = new JButton("InvisButton");
+		InvisButton.addActionListener(this);
+		InvisButton.setVisible(false);
+		
+		Button2 = new JButton("Button2");
+		Button2.addActionListener(this);
+		Button2.setText("2");
+		Button2.setFont(new Font("Serif", Font.PLAIN, 40));
+		buttonsPanel.add(Button2);
+		
+		InvisButton = new JButton("InvisButton");
+		InvisButton.addActionListener(this);
+		InvisButton.setVisible(false);
+		
+		Button3 = new JButton("Button3");
+		Button3.addActionListener(this);
+		Button3.setText("3");
+		Button3.setFont(new Font("Serif", Font.PLAIN, 40));
+		buttonsPanel.add(Button3);
+		
+		InvisButton = new JButton("InvisButton");
+		InvisButton.addActionListener(this);
+		InvisButton.setVisible(false);
+		
+		Button4 = new JButton("Button4");
+		Button4.addActionListener(this);
+		Button4.setText("4");
+		Button4.setFont(new Font("Serif", Font.PLAIN, 40));
+		buttonsPanel.add(Button4);
+		
+		InvisButton = new JButton("InvisButton");
+		InvisButton.addActionListener(this);
+		InvisButton.setVisible(false);
+		
+		Button5 = new JButton("Button5");
+		Button5.addActionListener(this);
+		Button5.setText("5");
+		Button5.setFont(new Font("Serif", Font.PLAIN, 40));
+		buttonsPanel.add(Button5);
+		
+		InvisButton = new JButton("InvisButton");
+		InvisButton.addActionListener(this);
+		InvisButton.setVisible(false);
+		
+		Button6 = new JButton("Button6");
+		Button6.addActionListener(this);
+		Button6.setText("6");
+		Button6.setFont(new Font("Serif", Font.PLAIN, 40));
+		buttonsPanel.add(Button6);
+		
+		InvisButton = new JButton("InvisButton");
+		InvisButton.addActionListener(this);
+		InvisButton.setVisible(false);
+		
+		Button7 = new JButton("Button7");
+		Button7.addActionListener(this);
+		Button7.setText("7");
+		Button7.setFont(new Font("Serif", Font.PLAIN, 40));
+		buttonsPanel.add(Button7);
+		
+		InvisButton = new JButton("InvisButton");
+		InvisButton.addActionListener(this);
+		InvisButton.setVisible(false);
+		
+		Button8 = new JButton("Button8");
+		Button8.addActionListener(this);
+		Button8.setText("8");
+		Button8.setFont(new Font("Serif", Font.PLAIN, 40));
+		buttonsPanel.add(Button8);
+		
+		InvisButton = new JButton("InvisButton");
+		InvisButton.addActionListener(this);
+		InvisButton.setVisible(false);
+		
+		Button9 = new JButton("Button9");
+		Button9.addActionListener(this);
+		Button9.setText("9");
+		Button9.setFont(new Font("Serif", Font.PLAIN, 40));
+		buttonsPanel.add(Button9);
+		
+		InvisButton = new JButton("InvisButton");
+		InvisButton.addActionListener(this);
+		InvisButton.setVisible(false);
+		
+		Button0 = new JButton("Button0");
+		Button0.addActionListener(this);
+		Button0.setText("0");
+		Button0.setFont(new Font("Serif", Font.PLAIN, 40));
+		buttonsPanel.add(Button0);
+		
+		InvisButton = new JButton("InvisButton");
+		InvisButton.addActionListener(this);
+		InvisButton.setVisible(false);
+		
+		
+		arrangement.add(buttonsPanel, BorderLayout.CENTER);
+	}
+	
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

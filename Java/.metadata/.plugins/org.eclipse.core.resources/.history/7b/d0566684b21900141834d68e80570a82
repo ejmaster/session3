@@ -1,0 +1,87 @@
+
+import java.awt.BorderLayout;
+import java.awt.Container;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.Random;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+
+
+public class ButtonGame implements ActionListener{
+
+	Random numberGenerator = new Random();
+	int setNumber, correct, incorrect;
+	JLabel statusLabel;
+	JButton button1, button2, button3, button4;
+	
+	public static void main(String[] args) {
+		
+		new ButtonGame();
+		
+		//add buttons
+
+		
+	
+	}
+
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		if (e.getSource()== button1){
+			statusLabel.setText("Correct" + correct);
+			correct += 1;
+					
+		}
+		
+		
+		//Update Label
+		statusLabel.setText("Correct: " + correct + "/Incorrect: " + incorrect);
+		
+		//Update Random Number
+		setNumber = numberGenerator.nextInt(3);
+	}
+	
+	public ButtonGame(){
+		
+		JFrame window = new JFrame();
+		window.setSize(600,400);
+		window.setVisible(true);
+		window.setTitle("Button Game 1.10");
+		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		Container arrangement = window.getContentPane();
+		arrangement.setLayout(new GridLayout(2,2));
+		
+		JPanel buttonsPanel = new JPanel();
+		buttonsPanel.setLayout(new GridLayout(2,2));
+		
+		statusLabel = new JLabel();
+		
+		button1 = new JButton("Button1");
+		button1.addActionListener(this);
+		buttonsPanel.add(button1);
+		
+		button2 = new JButton("Button2");
+		button2.addActionListener(this);
+		buttonsPanel.add(button2);
+		
+		button3 = new JButton("Button3");
+		button3.addActionListener(this);
+		buttonsPanel.add(button3);
+		
+		button4 = new JButton("Button4");
+		button4.addActionListener(this);
+		buttonsPanel.add(button4);
+		
+		arrangement.add(buttonsPanel, BorderLayout.NORTH);
+		arrangement.add(statusLabel, BorderLayout.SOUTH);
+		
+	
+	}
+	}	

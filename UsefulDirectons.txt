@@ -1,0 +1,27 @@
+Directions- Setting up an eclipse workspace
+1. Install java jdk 7 and download eclipse
+2. Download forge src 
+3. Extract the zipped folder
+4. Shift right click in the extracted forge folder
+5. Open the command window
+6. Type in: gradlew setupDevWorkspace eclipse
+7. Hit Enter
+8. Wait for it to say build complete ~takes 10 or so minutes
+9. Open eclipse and set workspace to the eclipse flie in the extacted forge folder
+
+Directions- installing forge mods for windows
+1. Download forge installer win
+2. Click on the download and install the client
+3. Type %appdata% into the search bar in the start menu
+4. Open up roaming
+5. Open up .minecraft
+6. Run minecraft
+7. A mod folder should appear
+8. Drag mod jar into the mod folder
+
+Directions- For getting your work from class into the eclipse workspace
+1. Open the forge folder after installing the eclipse workspace
+2. Open the src file
+3. Delete the main folder (note the main folder contains all the mods so only delete this if you have no mods you are working on)
+4. Take the main that is in your camper work folder and drag it into the src folder
+5. Open up eclipse to the workspace again
